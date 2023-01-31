@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Hospital 1",
+        "address": "Address 1",
+        "pincode": 110025,
+        "phonenumber": 9898989898
+    },
+    {
+        "name": "Hospital 2",
+        "address": "Address 2",
+        "pincode": 110025,
+        "phonenumber": 907864467
+    },
+    {
+        "name": "Hospital 3",
+        "address": "Address 3",
+        "pincode": 110025,
+        "phonenumber": 9842673827
+    },
+    {
+        "name": "Hospital 4",
+        "address": "Address 4",
+        "pincode": 110026,
+        "phonenumber": 9842673827
+    },
+    {
+        "name": "Hospital 5",
+        "address": "Address 5",
+        "pincode": 110026,
+        "phonenumber": 9842673827
+    },
+    {
+        "name": "Hospital 6",
+        "address": "Address 6",
+        "pincode": 110026,
+        "phonenumber": 9842673827
+    },
+    {
+        "name": "Hospital 7",
+        "address": "Address 7",
+        "pincode": 110027,
+        "phonenumber": 9842673827
+    },
+    {
+        "name": "Hospital 8",
+        "address": "Address 8",
+        "pincode": 110027,
+        "phonenumber": 9842673827
+    },
+    {
+        "name": "Hospital 9",
+        "address": "Address 9",
+        "pincode": 110027,
+        "phonenumber": 9842673827
+    }
+]

@@ -91,3 +91,18 @@ form button{
 .medicines button{
     margin: auto;
 }
+
+/* FINDHOSPITALS */
+
+.findhospital{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.findhospital tr td{
+    padding: 5px 15px;
+    text-align: center;
+}
