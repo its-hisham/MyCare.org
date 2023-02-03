@@ -1,54 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
-    <title>My Care.ORG</title>
+    <title>MyCareOrg</title>
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <h1>MY CARE ORGANISATION</h1>
+            <h1>MyCareOrg</h1>
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Book Appointment</a></li>
                 <li><a href="consult.html">Consultation</a></li>
                 <li><a href="buymedicines.html">Buy Medicines</a></li>
-                <l1><a href="findhospital.html">Find Hospital</a></l1>
-                <l1><a href="doctorslist.html">Doctors List</a></l1>
-                <l1><a href="contact.html">Contact Us</a></l1>
-                
+                <li><a href="findhospital.html">Find Hospital</a></li>
+                <li><a href="doctorslist.html">Doctors List</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
-            
         </nav>
     </header>
-
-    <div class="findhospital">
+    <section class="main-container book findhospital">
         <h2>Find Hospitals</h2>
-        <!-- <select id="pincode" name="pincode">
-             <option>select a pincode</option> 
-        </select> -->
-      <input type="text" placeholder="Enter Pincode" id="pincode"/>
-      <button id="search">Search</button>
-        <table>
-            <thead>
-                <tr>
-                    <th>Hospital Name</th>
-                    <th>Address</th>
-                    <th>Phone no.</th>
-                </tr>
-            </thead>
-            <tbody id="tbody">
-                
-            </tbody>
-        </table>
-    </div>
- 
+        <div class="cart-parent-container">
+            <!--Search Type Selector-->
+            <h3>Choose Search Method</h3>
+            <span class="search-selector">
+                <span style="display:flex; align-items: center; justify-content:center;gap:5px;"><input type="radio"
+                        name="select-type" id="dropdwn" value="dropdwn">
+                    <h4>Dropdown</h4>
+                </span>
+                <span style="display:flex; align-items: center; justify-content:center;gap:5px;">
+                    <input type="radio" name="select-type" id="searchtxt" value="searchtxt">
+                    <h4>Search Box</h4>
+                </span>
+            </span>
+
+            <div class="cart-box">
+                <!--Select from Dropdown-->
+                <select style="display:none" id="pincodes" name="pincodes">
+                    <option>Select Pincode</option>
+                    <option value="all">All Hospitals</option>
+                </select>
+                <!--Search Using text box-->
+                <input style="display:none" type="text" id="searchtext" placeholder="Search Pincode(e.g: 16365)" />
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Hospital Name</th>
+                            <th>Address</th>
+                            <th>Pincode</th>
+                        </tr>
+                    </thead>
+                    <tbody id="hosptable">
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &copy; Denny Paul</p>
+    </footer>
+
     <script src="script.js"></script>
-    
 </body>
+
 </html>

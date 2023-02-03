@@ -1,58 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>My Care.ORG</title>
+    <title>MyCareOrg</title>
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <h1>MY CARE ORGANISATION</h1>
+            <h1>MyCareOrg</h1>
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Book Appointment</a></li>
                 <li><a href="consult.html">Consultation</a></li>
                 <li><a href="buymedicines.html">Buy Medicines</a></li>
-                <l1><a href="findhospital.html">Find Hospital</a></l1>
-                <l1><a href="doctorslist.html">Doctors List</a></l1>
-                <l1><a href="contact.html">Contact Us</a></l1>
-                
+                <li><a href="findhospital.html">Find Hospital</a></li>
+                <li><a href="doctorslist.html">Doctors List</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
-            
         </nav>
     </header>
+    <section class="main-container book findhospital doctorslist">
+        <h2>List of Doctors.</h2>
+        <div class="cart-parent-container">
+            <!--Search Type Selector-->
+            <!-- <h3>List of Doctors.</h3> -->
+            <!-- <span class="search-selector">
+                <span style="display:flex; align-items: center; justify-content:center;gap:5px;"><input type="radio"
+                        name="select-type" id="dropdwn" value="dropdwn">
+                    <h4>Dropdown</h4>
+                </span>
+                <span style="display:flex; align-items: center; justify-content:center;gap:5px;">
+                    <input type="radio" name="select-type" id="searchtxt" value="searchtxt">
+                    <h4>Search Box</h4>
+                </span>
+            </span> -->
 
-    <div class="doctorslist">
-        <h2>List Doctors</h2>
-        <select id="specialisation" name="specialisation">
-            <option value="">Select Specialisation</option>
-            <option value="All">Select All</option>
+            <div class="cart-box">
+                <!--Select from Dropdown-->
+                <select id="deptlist" name="deptlist">
+                    <option>Select Department</option>
+                    <option value="all">All Departments</option>
+                </select>
+                <!--Search Using text box-->
+                <input type="text" id="searchdoc" placeholder="Search Doctor(e.g: Denny)" />
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Doctor Name</th>
+                            <th>Department</th>
+                            <th>Fees</th>
+                            <th>Availability</th>
+                        </tr>
+                    </thead>
+                    <tbody id="doctable">
 
-        </select>
-      
-        <table>
-            <thead>
-                <tr>
-                    <th>Doctor Id</th>
-                    <th>Doctor Name</th>
-                    <th>Specialisation</th>
-                    <th>Fees</th>
-                    <th>Availability</th>
-                </tr>
-                
-            </thead>
-            <tbody id="doclist">
-                
-            </tbody>
-        </table>
-    </div>
- 
+                    </tbody>
+                </table>
+            </div>
 
-    
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &copy; Denny Paul</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
