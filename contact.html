@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MyCareOrg</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>MyCareOrg</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Book Appointment</a></li>
+                <li><a href="consult.html">Consultation</a></li>
+                <li><a href="buymedicines.html">Buy Medicines</a></li>
+                <li><a href="findhospital.html">Find Hospital</a></li>
+                <li><a href="doctorslist.html">Doctors List</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main-container book contact">
+        <h2>Contact Us</h2>
+        <form action="">
+            <!-- patientname -->
+            <label for="pname">Name</label>
+            <input type="text" name="pname" id="pname">
+            <p class="error"></p>
+            <!--Mobile-->
+            <label for="mobile">Mobile</label>
+            <input type="tel" name="mobile" id="mobile">
+            <p class="error"></p>
+            <!--Message-->
+            <label for="textmessage">Message</label>
+            <textarea id="textmessage" class="textmessage" name="textmessage"></textarea>
+            <p class="error"></p>
+            <!--Submit button-->
+            <button id="subBtn">Book</button>
+            <p id="successmessage"></p>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
