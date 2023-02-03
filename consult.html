@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MyCareOrg</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Book Consultation</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Book Appointment</a></li>
+                <li><a href="consult.html">Consultation</a></li>
+                <li><a href="buymedicines.html">Buy Medicines</a></li>
+                <li><a href="findhospital.html">Find Hospital</a></li>
+                <li><a href="doctorslist.html">Doctors List</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main-container book">
+        <h2>Book Consultation</h2>
+        <form action="">
+            <!-- patientname -->
+            <label for="pname">Patient Name</label>
+            <input type="text" name="pname" id="pname">
+            <p class="error"></p>
+            <!--Mobile-->
+            <label for="mobile">Mobile</label>
+            <input type="tel" name="mobile" id="mobile">
+            <p class="error"></p>
+            <!--Gender-->
+            <span class="gender">
+                <h3>Gender</h3>
+                <label for="gender">Male</label>
+                <input type="radio" name="gender" value="male" id="male" checked>
+                <label for="gender">Female</label>
+                <input type="radio" name="gender" value="female" id="female">
+            </span>
+            <!--Department-->
+            <label for="tests">Department</label>
+            <select id="dept" name="dept">
+                <option value="">Select a Department</option>
+                <option value="pediatrics">Pediatrics</option>
+                <option value="gastro">Gastroenterology</option>
+                <option value="neuro">Neurology</option>
+            </select>
+            <p class="error"></p>
+            <!--Doctors-->
+            <label for="tests"> Doctor</label>
+            <select id="doctor" name="doctor">
+                <option value="">Select a Doctor</option>
+                <option value="doc1">Doctor 1</option>
+                <option value="doc2">Doctor 2</option>
+                <option value="doc3">Doctor 3</option>
+            </select>
+            <p class="error"></p>
+            <!--Date-->
+            <label for="bdate">Date</label>
+            <input type="date" name="bdate" id="bdate">
+            <p class="error"></p>
+            <!--Submit button-->
+            <button id="subBtn">Book</button>
+            <p id="successmessage"></p>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
