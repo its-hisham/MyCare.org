@@ -1,125 +1,153 @@
-*{
+/*Common CSS*/
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-
-header{
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  a:hover {
+    cursor: pointer;
+    color: crimson;
+  }
+  li {
+    list-style: none;
+  }
+  button {
+    cursor: pointer;
+  }
+  
+  button {
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: rgb(55, 84, 138);
+    color: #fff;
+    font-size: 22px;
+    border: 3px solid transparent;
+  }
+  button:hover {
+    background-color: transparent;
+    border: 3px solid rgb(236, 114, 157);
+  }
+  .error {
+    color: red;
+  }
+  /*header*/
+  
+  header {
     height: 80px;
-    background-color: grey;
+    background-color: rgb(53, 53, 173);
+    color: #fff;
     display: flex;
     justify-content: space-between;
-    padding: 0 50px ;
     align-items: center;
-}
-
-
-nav ul{
+    padding: 0 80px;
+  }
+  header nav ul {
     display: flex;
-    gap: 20px;
-}
-
-nav ul li{
-    list-style: none;
-}
-
-.form{
+  }
+  header nav ul li {
+    font-size: 22px;
+    margin-left: 20px;
+  }
+  .main-container {
+    min-height: calc(100vh - 80px);
+    background-color: rgb(134, 192, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+    padding-bottom: 50px;
+  }
+  
+  /*Book Appointment*/
+  .book {
+    flex-direction: column;
+  }
+  .book form {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+  }
+  .book input,
+  .book select {
+    border: none;
+    padding: 5px;
+    font-size: 18px;
+    background-color: aliceblue;
+  }
+  
+  .book label,
+  .book h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 300;
+  }
+  
+  /*Footer*/
+  footer {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /*Buy Medicines*/
+  .medicines input {
+    width: 55px;
+  }
+  .medicines table td {
+    padding: 5px 20px;
     border: 2px solid black;
-    width: 800px;
-    margin: auto;
-    height: 500px;
-    margin-top: 20px;
-}
-
-.form form{
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    align-items: center;
-    margin-top: 50px;
-    
-
-}
-
-input[type=text],input[type=tel],select{
-    width: 500px;
-}
-
-.form h2{
-    text-align: center;
-    margin-top:50px;
-}
-
-form button{
-    padding: 10px 20px;
-}
-
-/* MEDICINES */
-
-.medicines{
-    
-        border: 2px solid black;
-        width: 80%;
-        margin: auto;
-        height: 500px;
-        margin-top: 20px;
-        display:flex;
-        flex-direction: column;
-    }
-
-.medicines table{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      
-}
-
-.medicines table tr td{
-    padding:0 50px !important;
-    
-}
-
-.medicines table tr td .cart-desc h3{
-    text-align: center;
-}
-
-.medicines table tr td img{
-    height: 90px;
-}
-
-.medicines button{
-    margin: auto;
-}
-
-/* FINDHOSPITALS */
-
-.findhospital{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 10px;
-}
-
-.findhospital tr td{
-    padding: 5px 15px;
-    text-align: center;
-}
-
-.doctorslist{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 10px;
-}
-
-.doctorslist table {
+  }
+  .medicines table tr:nth-child(even) {
+    background-color: bisque;
+  }
+  .medicines table td img {
+    height: 50px;
+  }
+  
+  /*Find Hospital*/
+  .findhospital {
+    justify-content: flex-start;
+  }
+  .findhospital select,
+  .findhospital input[type="text"] {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .findhospital table {
+    width: 450px;
+    border: 2px solid black;
     border-collapse: collapse;
-    width: 75%;
+    font-size: 22px;
   }
-
- .doctorslist th, td {
-    text-align: left;
+  .findhospital td,
+  .findhospital th {
+    text-align: center;
+    padding: 2px 20px;
+    min-width: 250px;
+    font-size: 20px;
+    white-space: wrap;
   }
+  .findhospital td:last-child {
+    white-space: normal;
+  }
+  .findhospital tr:nth-child(even) {
+    background-color: rgb(119, 119, 119);
+  }
+  .findhospital td,
+  .findhospital th,
+  .findhospital table {
+    border: 2px solid black;
+  }
+  .findhospital .search-selector {
+    display: flex;
+    margin: 10px 0;
+    gap: 20px;
+  }
+  
+  /*doctors list*/
