@@ -1,30 +1,50 @@
 [
     {
-        "doc_id": 101,
-        "doc_name": "Doctor1",
-        "specialisation": "ENT",
-        "doc_fees": "450",
-        "availability" : "Mon-Fri 10:00 AM to 5 PM"
+      "doc_name": "Doctor 1",
+      "doc_dept": "ENT",
+      "doc_fees": 100,
+      "availability": "Mon-fri 10:00AM-6:00PM"
     },
     {
-        "doc_id": 102,
-        "doc_name": "Doctor2",
-        "specialisation": "Dermatology",
-        "doc_fees": "550",
-        "availability" : "Mon-Fri 10:00 AM to 3 PM"
+      "doc_name": "Doctor 2",
+      "doc_dept": "ENT",
+      "doc_fees": 150,
+      "availability": "Mon-fri 10:00AM-6:00PM"
     },
     {
-        "doc_id": 103,
-        "doc_name": "Doctor3",
-        "specialisation": "Dentist",
-        "doc_fees": "550",
-        "availability" : "Mon-Fri 10:00 AM to 1 PM"
+      "doc_name": "Doctor 3",
+      "doc_dept": "Gastroentrology",
+      "doc_fees": 200,
+      "availability": "Mon-fri 10:00AM-6:00PM"
     },
     {
-        "doc_id": 104,
-        "doc_name": "Doctor4",
-        "specialisation": "Dentist",
-        "doc_fees": "550",
-        "availability" : "Mon-Fri 10:00 AM to 6 PM"
+      "doc_name": "Doctor 4",
+      "doc_dept": "Gastroentrology",
+      "doc_fees": 250,
+      "availability": "Mon-fri 10:00AM-6:00PM"
+    },
+    {
+      "doc_name": "Doctor 5",
+      "doc_dept": "Neurology",
+      "doc_fees": 200,
+      "availability": "Mon-fri 10:00AM-6:00PM"
+    },
+    {
+      "doc_name": "Doctor 6",
+      "doc_dept": "Neurology",
+      "doc_fees": 250,
+      "availability": "Mon-fri 10:00AM-6:00PM"
+    },
+    {
+      "doc_name": "Doctor 7",
+      "doc_dept": "Orthopaedic",
+      "doc_fees": 200,
+      "availability": "Mon-fri 10:00AM-6:00PM"
+    },
+    {
+      "doc_name": "Doctor 8",
+      "doc_dept": "Orthopaedic",
+      "doc_fees": 250,
+      "availability": "Mon-fri 10:00AM-6:00PM"
     }
-]
+  ]

@@ -1,5 +1,5 @@
 //Fetch medicines
-const fetchMedicine = fetch("datas/medicines.json").then((response) =>
+const fetchMedicine = fetch("medicines.json").then((response) =>
   response.json().then((datas) => {
     return datas.forEach((data) => {
       document.getElementById("medtable").innerHTML += `
@@ -37,7 +37,7 @@ const fetchMedicine = fetch("datas/medicines.json").then((response) =>
 );
 
 /*Find Hospitals*/
-fetch("datas/hospitals.json")
+fetch("./hospitals.json")
   .then((datas) => datas.json())
   .then((data) => {
     const pincode_select = document.getElementById("pincodes");
@@ -138,7 +138,7 @@ for (let i = 0; i < searchselector.length; i++) {
 }
 
 //Doctors List
-fetch("datas/doctors.json")
+fetch("doctors.json")
   .then((datas) => datas.json())
   .then((data) => {
     const deptlist_select = document.getElementById("deptlist");

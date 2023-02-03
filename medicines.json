@@ -1,0 +1,27 @@
+[
+    {
+      "name": "Paracetamol",
+      "price": 10,
+  
+      "description": "this is a description for the medicine",
+      "image": "../datas/images/medicines/paracetamol.webp"
+    },
+    {
+      "name": "Medicine1",
+      "price": 50,
+      "description": "this is a description for the medicine",
+      "image": "../datas/images/medicines/paracetamol.webp"
+    },
+    {
+      "name": "Medicine2",
+      "price": 100,
+      "description": "this is a description for the medicine",
+      "image": "../datas/images/medicines/paracetamol.webp"
+    },
+    {
+      "name": "Medicine2",
+      "price": 120,
+      "description": "this is a description for the medicine",
+      "image": "../datas/images/medicines/paracetamol.webp"
+    }
+  ]

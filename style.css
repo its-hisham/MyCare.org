@@ -10,7 +10,7 @@
   }
   a:hover {
     cursor: pointer;
-    color: crimson;
+    color: rgb(20, 87, 220);
   }
   li {
     list-style: none;
@@ -30,7 +30,7 @@
   }
   button:hover {
     background-color: transparent;
-    border: 3px solid rgb(236, 114, 157);
+    border: 3px solid rgb(126, 114, 236);
   }
   .error {
     color: red;
@@ -39,7 +39,7 @@
   
   header {
     height: 80px;
-    background-color: rgb(53, 53, 173);
+    background-color: rgb(153, 173, 53);
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -55,7 +55,7 @@
   }
   .main-container {
     min-height: calc(100vh - 80px);
-    background-color: rgb(134, 192, 255);
+    background-color: rgb(134, 255, 150);
     display: flex;
     justify-content: center;
     align-items: center;
